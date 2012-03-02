@@ -16,9 +16,10 @@ def set_breakpoint(arg1, arg2, data=None):
     """We can set breakpoints via ``<Leader>b``."""
     foo = 'bar'
     result = arg1 + arg2
-    import ipdb; ipdb.set_trace() # BREAKPOINT
     print 'Try to set a breakpoint before this statement.'
     print 'Then run ``python demo.py``.'
+    print 'Use s to step into the next method.'
+    we_can_step_into_here()
     import ipdb; ipdb.set_trace() # BREAKPOINT
     print 'Good bye!'
     # ?
@@ -32,3 +33,7 @@ def set_breakpoint(arg1, arg2, data=None):
     # s
     # c
     # exit
+
+
+def we_can_step_into_here():
+    print('It works!')

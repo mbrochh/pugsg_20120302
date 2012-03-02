@@ -5,10 +5,9 @@ from utils import set_breakpoint
 # from utils import does_not_exist
 
 
-def main(*args, **kwargs):
+def my_god_it_is_full_of_colors(*args, **kwargs):
     """See? We got nice syntax highting."""
     print 'Hello world'
-    set_breakpoint(42, 42, data={'key': 'value', })
 
 
 def fold_this():
@@ -44,6 +43,11 @@ def open_utils_py():
     """We can use Ctlp to open files in our project."""
     print 'Open ``utils.py`` in a new vertical split via ``<C-p>ut<C-v>``'
     print 'Now open ``utils.py`` in a new tab via ``<C-p>ut<C-t>``.'
+
+
+def main():
+    """Try to set a breakpoint before the next line."""
+    set_breakpoint(42, 42, data={'foobar': 'test', })
 
 
 if __name__ == '__main__':
